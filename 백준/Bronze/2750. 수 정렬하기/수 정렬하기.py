@@ -1,12 +1,12 @@
-n = int(input())
-nums = []
+import sys
+input = sys.stdin.readline
 
-for i in range(n) :
-    num = int(input())
-    nums.append(num)
+N = int(input())
+numList = []
+for _ in range(N) :
+    numList.append(int(input()))
 
-nums = list(set(nums))
-nums.sort()
+numList.sort()
 
-for num in nums :
-    print(num)
+for n in numList :
+    print(n)
