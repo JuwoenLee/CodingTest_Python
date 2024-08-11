@@ -12,7 +12,6 @@ for i in range(N) :
     else : # 이미 저장된 값이라면
         countDict[bookTitle] += 1 # 기존 value값에 1 추가 
 
-countDict = dict(sorted(countDict.items())) # key값을 기준으로 정렬 (abc순)
 maxValue = max(countDict.values()) # 가장 많이 팔린 책의 갯수 확인
 ansDict = dict()
 
