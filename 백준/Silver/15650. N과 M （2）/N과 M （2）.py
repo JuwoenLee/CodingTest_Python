@@ -5,7 +5,7 @@ N, M = map(int, input().split())
 ansList = []
 
 def dfs() :
-    if len(ansList) == M and checkOrder(ansList):
+    if len(ansList) == M and ansList == sorted(ansList):
         print((' ').join(map(str, ansList)))
     
     for i in range(1, N + 1) :
@@ -13,8 +13,5 @@ def dfs() :
                 ansList.append(i)
                 dfs()
                 ansList.pop()
-
-def checkOrder(checkList) :
-    return checkList == sorted(checkList)
 
 dfs()
