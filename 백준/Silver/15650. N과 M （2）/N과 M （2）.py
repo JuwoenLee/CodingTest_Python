@@ -15,8 +15,6 @@ def dfs() :
                 ansList.pop()
 
 def checkOrder(checkList) :
-    if checkList == sorted(checkList) : 
-            return True
-    return False
+    return checkList == sorted(checkList)
 
 dfs()
